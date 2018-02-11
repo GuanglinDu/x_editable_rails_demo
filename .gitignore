@@ -15,3 +15,12 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore .DS_Store.
+.DS_Store
+
+# VIM swap files.
+*.swp
+*.rb.swo
+*.swo
+*.swn

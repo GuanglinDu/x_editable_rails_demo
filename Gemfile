@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.3.0'
 gem 'rails', '4.2.1.rc2'
 
 gem 'sass-rails', '~> 5.0'
