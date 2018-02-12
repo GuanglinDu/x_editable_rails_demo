@@ -15,3 +15,27 @@
 /log/*
 !/log/.keep
 /tmp
+
+/node_modules
+/yarn-error.log
+
+.byebug_history
+
+# Have to reconfigure solr in production environment, so ignore most of them.
+# See http://www.zeebar.com/technotes/sunspot-solr-in-rails4-production
+/solr/data
+/solr/default/data
+/solr/development
+/solr/production
+/solr/test
+/solr/pids
+
+# Swap files
+*.swp
+*.rb.swo
+*.swo
+*.swn
+
+# Ignores https certificates
+*.crt
+*.key
