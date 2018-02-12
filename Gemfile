@@ -1,14 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'rails',            '4.2.10'
-gem 'sass-rails',       '5.0.3'
+gem 'sass-rails',       '5.0.7'
 gem 'uglifier',         '2.7.1'
 gem 'jquery-rails',     '4.0.3'
 gem 'turbolinks',       '2.5.3'
 gem 'jbuilder',         '2.2.12'
 gem 'coffee-rails',     '4.1.0'
 gem 'bootstrap-sass',   '3.3.4.1'
-gem 'x-editable-rails', '1.5.3' 
+gem 'x-editable-rails', '1.5.3'
+gem 'sprockets-rails',  '3.2.1' 
 
 group :development, :test do
   gem 'pry',         '0.10.4'
