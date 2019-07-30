@@ -21,16 +21,12 @@ class ArticlesControllerTest < ActionController::TestCase
       post :create, article: { content: @article.content, title: @article.title }
     end
 
-    assert_redirected_to article_path(assigns(:article))
+    #assert_redirected_to article_path(assigns(:article))
+    assert_redirected_to articles_path
   end
 
   test "should show article" do
     get :show, id: @article
-    assert_response :success
-  end
-
-  test "should get edit" do
-    get :edit, id: @article
     assert_response :success
   end
 

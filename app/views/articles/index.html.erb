@@ -17,7 +17,6 @@
         <td><%= editable article, :title %></td>
         <td><%= editable article, :content, type: "textarea" %></td>
         <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
         <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -31,5 +30,3 @@
 <p style="margin: 30px 0px">
   Github: <a href="https://github.com/diogowernik/x_editable_rails_demo">https://github.com/diogowernik/x_editable_rails_demo</a>
 </p>
-
-

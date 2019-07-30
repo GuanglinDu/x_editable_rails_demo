@@ -9,3 +9,7 @@
 Demo:
 
 http://x-editable-rails-demo.herokuapp.com/
+
+The x-editable-rails gem source code:
+
+https://github.com/werein/x-editable-rails
