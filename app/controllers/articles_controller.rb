@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :set_article, only: [:show, :update, :destroy]
 
   # GET /articles
   # GET /articles.json
@@ -17,10 +17,6 @@ class ArticlesController < ApplicationController
     @article = Article.new
   end
 
-  # GET /articles/1/edit
-  def edit
-  end
-
   # POST /articles
   # POST /articles.json
   def create
@@ -32,7 +28,8 @@ class ArticlesController < ApplicationController
                                   notice: 'Article was successfully created.' }
         format.json { render :show, status: :created, location: @article }
       else
-        format.html { render :new }
+        #format.html { render :new }
+        format.html { redirect_to articles_path }
         format.json { render json: @article.errors,
                              status: :unprocessable_entity }
       end
