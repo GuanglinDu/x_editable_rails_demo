@@ -36,7 +36,7 @@ class ArticlesController < ApplicationController
           notice: 'Article was successfully updated.' }
         format.json { render :show, status: :ok, location: @article }
       else
-        format.html { render :edit }
+        format.html { render "articles/index" }
         format.json { render json: @article.errors,
                              status: :unprocessable_entity }
       end
@@ -47,11 +47,8 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1.json
   def destroy
     @article.destroy
-    respond_to do |format|
-      format.html { redirect_to articles_url,
-        notice: 'Article was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    flash[:success] = 'Article was successfully destroyed.'
+    redirect_to articles_path
   end
 
   private
