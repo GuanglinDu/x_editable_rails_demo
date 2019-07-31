@@ -1,3 +1,4 @@
 class Article < ActiveRecord::Base
-  validates :title, :content, presence: true
+  validates :title,   presence: true, length: { minimum: 5 }
+  validates :content, presence: true, length: { minimum: 5 }
 end

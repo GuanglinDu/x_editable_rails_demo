@@ -18,17 +18,12 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
 
-    respond_to do |format|
-      if @article.save
-        format.html { redirect_to articles_path,
-          notice: 'Article was successfully created.' }
-        format.json { render :show, status: :created, location: @article }
-      else
-        #format.html { render :new }
-        format.html { redirect_to articles_path }
-        format.json { render json: @article.errors,
-                             status: :unprocessable_entity }
-      end
+    if @article.save
+      flash[:success] = 'Article was successfully created.'
+      redirect_to articles_path      
+    else
+      @articles = []
+      render "articles/index"
     end
   end
 

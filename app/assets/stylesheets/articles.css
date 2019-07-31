@@ -1,3 +1,11 @@
 #article-box {
   top: 100px;
 }
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 10px 0;
+  }
+}

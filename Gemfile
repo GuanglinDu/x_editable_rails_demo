@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails',            '4.2.10'
+gem 'rails',            '4.2.11.1'
 gem 'puma',             '3.4.0'
 gem 'sass-rails',       '5.0.7'
 gem 'uglifier',         '2.7.1'
@@ -15,7 +15,7 @@ gem 'sprockets-rails',  '3.2.1'
 group :development, :test do
   gem 'pry',         '0.10.4'
   gem 'byebug',      '4.0.4'
-  gem 'spring',      '1.3.3'
+  gem 'spring',      '2.0.2'
   gem 'sqlite3',     '1.3.10'
   gem 'web-console', '2.1.2'
 end
