@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :articles, except: [:edit]
+  resources :articles, except: [:new, :edit]
   root 'articles#index'
 end
